@@ -9,6 +9,7 @@
       "TodoApi/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.21",
+          "Microsoft.EntityFrameworkCore.InMemory": "6.0.21",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -41,6 +42,17 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/6.0.21": {},
+      "Microsoft.EntityFrameworkCore.InMemory/6.0.21": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.21"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "assemblyVersion": "6.0.21.0",
+            "fileVersion": "6.0.2123.36206"
+          }
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
       "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
         "dependencies": {
@@ -187,6 +199,13 @@
       "sha512": "sha512-gS8tH419vOY2kEyqEZBX8VnXWmtHaor7gVx6zVaXCsEyQurGR/aVB++IZ62vzeQFS9R46LbNY6D6bqEA6j3iCg==",
       "path": "microsoft.entityframeworkcore.analyzers/6.0.21",
       "hashPath": "microsoft.entityframeworkcore.analyzers.6.0.21.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/6.0.21": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NJq3pURTBBHWkHgYkZJlCesZ6udyQIlnS2gU8SdR0xZ5VhW3c90tCCkZel38CgPmq29vWfxLurJLEwroIUokzg==",
+      "path": "microsoft.entityframeworkcore.inmemory/6.0.21",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.6.0.21.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "type": "package",

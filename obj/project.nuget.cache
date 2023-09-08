@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "uA7bMIyjGs1ZBGP+ofNkfrh3wY3UM1sG9O16qaac+ravYy4UuuBP8xZ4xpnCe1JTWlHsLVkrlq3vhOM63+QLfg==",
+  "dgSpecHash": "smDkvG0B7ybHZem98dmzKG6WPIjGZoUz8teATvvJhq2IxBC7RucJLbXpjUUVlL0UrD7cTHelm+AY5GQ0x97CxA==",
   "success": true,
   "projectFilePath": "C:\\Users\\FLowdo\\Desktop\\TodoApi\\TodoApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FLowdo\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.21\\microsoft.entityframeworkcore.6.0.21.nupkg.sha512",
     "C:\\Users\\FLowdo\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.21\\microsoft.entityframeworkcore.abstractions.6.0.21.nupkg.sha512",
     "C:\\Users\\FLowdo\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.21\\microsoft.entityframeworkcore.analyzers.6.0.21.nupkg.sha512",
+    "C:\\Users\\FLowdo\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\6.0.21\\microsoft.entityframeworkcore.inmemory.6.0.21.nupkg.sha512",
     "C:\\Users\\FLowdo\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\FLowdo\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\FLowdo\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
