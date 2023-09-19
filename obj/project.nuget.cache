@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "2Im+UaTL8UdqHmuXujTWa4W7dcKQxBg88Pb/tHCxTXNzt/88dVmaa1wLF1zHiMtDMU5G9MWkM0u3eA1FEGGVPA==",
-  "success": false,
+  "dgSpecHash": "dTK3SoUeuZTtpfNVUm5yHOfKlAsRFZ+Flx6tAb6k69GYGkIydYz8Y9ckO7WiIOm/Tagcr3qAYq4eDPrFdjrOng==",
+  "success": true,
   "projectFilePath": "C:\\Users\\FLowdo\\Desktop\\TodoApi\\TodoApi.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\FLowdo\\.nuget\\packages\\dotnet-aspnet-codegenerator\\5.0.0\\dotnet-aspnet-codegenerator.5.0.0.nupkg.sha512",
     "C:\\Users\\FLowdo\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\FLowdo\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\FLowdo\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",
@@ -227,24 +226,5 @@
     "C:\\Users\\FLowdo\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\FLowdo\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "Package dotnet-aspnet-codegenerator 5.0.0 is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Package dotnet-aspnet-codegenerator 5.0.0 supports: net5.0 (.NETCoreApp,Version=v5.0) / any",
-      "libraryId": "dotnet-aspnet-codegenerator",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1212",
-      "level": "Error",
-      "message": "Invalid project-package combination for dotnet-aspnet-codegenerator 5.0.0. DotnetToolReference project style can only contain references of the DotnetTool type ",
-      "libraryId": "dotnet-aspnet-codegenerator",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }
