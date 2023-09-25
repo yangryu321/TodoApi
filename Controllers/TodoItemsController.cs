@@ -17,15 +17,15 @@ public class TodoItemsController : ControllerBase
 
     // GET: api/TodoItems
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItems()
+    public async Task<ActionResult<IEnumerable<TodoItemDTO>>> GetTodoItems()
     {
-        return await _context.TodoItems.ToListAsync();
+        return await _context.TodoItems.Select(x=>ItemToDTO(x)).ToListAsync();
     }
 
     // GET: api/TodoItems/5
     // <snippet_GetByID>
     [HttpGet("{id}")]
-    public async Task<ActionResult<TodoItem>> GetTodoItem(long id)
+    public async Task<ActionResult<TodoItemDTO>> GetTodoItem(long id)
     {
         var todoItem = await _context.TodoItems.FindAsync(id);
 
@@ -34,7 +34,8 @@ public class TodoItemsController : ControllerBase
             return NotFound();
         }
 
-        return todoItem;
+     
+        return ItemToDTO(todoItem);
     }
     // </snippet_GetByID>
 
@@ -42,9 +43,9 @@ public class TodoItemsController : ControllerBase
     // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
     // <snippet_Update>
     [HttpPut("{id}")]
-    public async Task<IActionResult> PutTodoItem(long id, TodoItem todo)
+    public async Task<IActionResult> PutTodoItem(long id, TodoItemDTO todoDTO)
     {
-        if (id != todo.Id)
+        if (id != todoDTO.Id)
         {
             return BadRequest();
         }
@@ -55,8 +56,8 @@ public class TodoItemsController : ControllerBase
             return NotFound();
         }
 
-        todoItem.Name = todo.Name;
-        todoItem.IsComplete = todo.IsComplete;
+        todoItem.Name = todoDTO.Name;
+        todoItem.IsComplete = todoDTO.IsComplete;
 
         try
         {
@@ -106,5 +107,18 @@ public class TodoItemsController : ControllerBase
         return _context.TodoItems.Any(e => e.Id == id);
     }
 
+
+    private static TodoItemDTO ItemToDTO(TodoItem todoItem)
+    { 
+        var itemDTO = new TodoItemDTO
+       {
+           Id = todoItem.Id,
+           Name = todoItem.Name,
+           IsComplete = todoItem.IsComplete
+       };
+
+       return itemDTO;
+    }
+       
 
 }
