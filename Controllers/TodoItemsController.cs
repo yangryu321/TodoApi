@@ -76,8 +76,13 @@ public class TodoItemsController : ControllerBase
     // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
     // <snippet_Create>
     [HttpPost]
-    public async Task<ActionResult<TodoItem>> PostTodoItem(TodoItem todoItem)
+    public async Task<ActionResult<TodoItem>> PostTodoItem(TodoItemDTO todoItemDTO)
     {
+        var todoItem = new TodoItem
+        {
+            Id = todoItemDTO.Id,
+            Name = todoItemDTO.Name
+        };
         _context.TodoItems.Add(todoItem);
         await _context.SaveChangesAsync();
 
