@@ -63,10 +63,6 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
-            },
-            "dotnet-aspnet-codegenerator": {
-              "target": "Package",
-              "version": "[5.0.0, )"
             }
           },
           "imports": [
