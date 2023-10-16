@@ -243,3 +243,4 @@ C:\Users\FLowdo\Desktop\TodoApi\obj\Debug\net6.0\refint\TodoApi.dll
 C:\Users\FLowdo\Desktop\TodoApi\obj\Debug\net6.0\TodoApi.pdb
 C:\Users\FLowdo\Desktop\TodoApi\obj\Debug\net6.0\TodoApi.genruntimeconfig.cache
 C:\Users\FLowdo\Desktop\TodoApi\obj\Debug\net6.0\ref\TodoApi.dll
+C:\Users\FLowdo\Desktop\TodoApi\bin\Debug\net6.0\TodoApi.staticwebassets.runtime.json
