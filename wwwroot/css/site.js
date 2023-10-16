@@ -8,6 +8,7 @@ function getItems() {
     .catch(error => console.error('Unable to get items.', error));
 }
 
+//TODO: additem not working
 function addItem() {
   const addNameTextbox = document.getElementById('add-name');
 
